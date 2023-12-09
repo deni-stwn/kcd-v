@@ -13,12 +13,18 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <!-- Nav -->
             <div class="navbar-nav mx-lg-auto py-4 py-md-0">
-                <a class="nav-item nav-link active" href="/" aria-current="page">Home</a>
-                <a class="nav-item nav-link" href="{{ route('antrian') }}">Antrian</a>
-                <a class="nav-item nav-link" href="{{ route('blog') }}">Berita</a>
-                <a class="nav-item nav-link" href="{{ route('link-terkait') }}">Link Terkait</a>
-                <a class="nav-item nav-link" href="{{ route('contact') }}">Kontak</a>
-                <a class="nav-item nav-link" href="{{ route('pegawai') }}">Pegawai KCD</a>
+                <a class="nav-item nav-link {{ Request::is('/') ? 'active tw-font-semibold' : '' }}" href="/"
+                    aria-current="page">Home</a>
+                <a class="nav-item nav-link {{ Request::is('antrian') ? 'active tw-font-semibold' : '' }}"
+                    href="{{ route('antrian') }}">Antrian</a>
+                <a class="nav-item nav-link {{ Request::is('berita') ? 'active tw-font-semibold' : '' }}"
+                    href="{{ route('blog') }}">Berita</a>
+                <a class="nav-item nav-link {{ Request::is('link-terkait') ? 'active tw-font-semibold' : '' }}"
+                    href="{{ route('link-terkait') }}">Link Terkait</a>
+                <a class="nav-item nav-link {{ Request::is('contact') ? 'active tw-font-semibold' : '' }}"
+                    href="{{ route('contact') }}">Kontak</a>
+                <a class="nav-item nav-link {{ Request::is('pegawai') ? 'active tw-font-semibold' : '' }}"
+                    href="{{ route('pegawai') }}">Pegawai KCD</a>
             </div>
             <!-- Right navigation -->
             <div class="navbar-nav ms-lg-4 ">

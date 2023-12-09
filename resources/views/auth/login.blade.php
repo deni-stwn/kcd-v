@@ -61,9 +61,9 @@
                                     </a>
                                 @endif --}}
                             </div>
-
-                            <button type="submit" class="btn btn-primary w-100">
-                                {{ __('Login') }}
+                            <button type="submit"
+                                class="tw-w-full text-center tw-bg-[#45BA97] tw-text-white tw-py-2 tw-rounded-md">
+                                Login
                             </button>
                         </form>
                     </div>
@@ -73,6 +73,18 @@
             </div>
         </div>
     </div>
+    @push('styles')
+        <style>
+            /* button,
+                                                                                            [type='button'],
+                                                                                            [type='reset'],
+                                                                                            [type='submit'] {
+                                                                                                -webkit-appearance: button;
+                                                                                                background-color: none !important;
+                                                                                                background-image: none;
+                                                                                            } */
+        </style>
+    @endpush
     @push('scripts')
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script type="text/javascript">

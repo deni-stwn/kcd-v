@@ -4,14 +4,37 @@
 
 @section('content')
     <section>
-        <div class="py-lg-18 py-10 bg-auto hero-graphics tw-mt-20 tw-py-[253px]"
-            style="background-image: url('./Banner.png'); background-size: cover; background-position: center center;">
-            <div class="container">
+        <div class="bg-auto hero-graphics tw-mt-20 tw-relative">
+            {{-- style="background-image: url('./Banner.png'); background-size: cover; background-position: center center;"> --}}
+
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 tw-h-[700px] tw-object-cover tw-object-bottom"
+                            src="{{ asset('assets/teteh.jpg') }} " alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 tw-h-[700px] tw-object-cover tw-object-top"
+                            src="{{ asset('Banner.png') }}" alt="Second slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div class="container tw-absolute tw-top-1/2 tw-left-1/2 tw-transform tw--translate-x-1/2 tw--translate-y-1/2">
                 <!-- Hero Section -->
                 <div class="row justify-content-center">
-                    <div class="col-xl-7 col-lg-7 col-md-12">
+                    <div class="col-lg-7 col-md-12">
                         <div class="py-8 py-lg-0 text-center">
-                            <h1 class="display-2 fw-bold mb-3 text-primary"><span class="text-light px-3 px-md-0">KCD WILAYAH
+                            <h1 class="display-2 fw-bold mb-3 text-primary"><span class="text-light px-3 px-md-0">KCD
+                                    WILAYAH
                                     V
                             </h1>
                             <p class="text-light" style=" font-weight: 400; margin-bottom: 30px">
@@ -21,7 +44,7 @@
                                 lanjut
                                 tentang KCD.
                             </p>
-                            <x-button url="#">
+                            <x-button url="/link-terkait">
                                 Layanan Kami
                             </x-button>
                         </div>
@@ -38,14 +61,18 @@
                     Layanan Terfavorit
                 </div>
             </x-HeaderTitle>
-            <div class="tw-flex tw-flex-wrap tw-justify-center tw-gap-8 tw-mb-12">
-                <x-card title="SIAP JABAR" description="Kepegawaian" />
-                <x-card title="SIAP JABAR" description="Kepegawaian" />
-                <x-card title="SIAP JABAR" description="Kepegawaian" />
-                <x-card title="SIAP JABAR" description="Kepegawaian" />
+            <div class="tw-mb-12">
+                <div class="row">
+                    @foreach ($links as $link)
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <x-card image="{{ $link['image'] }}" title="{{ $link['title'] }}"
+                                description="{{ $link['description'] }}" url="{{ $link['url'] }}" />
+                        </div>
+                    @endforeach
+                </div>
             </div>
             <div class="d-flex justify-content-center">
-                <x-button url="">
+                <x-button url="/link-terkait">
                     Layanan Selengkapnya <i class="fa-solid fa-share"></i>
                 </x-button>
             </div>
@@ -112,13 +139,13 @@
             </x-HeaderTitle>
             <div class="tw-flex tw-flex-wrap tw-justify-center tw-gap-8 tw-mb-12">
                 @foreach ($blogs as $blog)
-                    <x-beritacard url="#" date="{{ $blog->created_at ? $blog->created_at->format('d F Y') : '' }}"
-                        title="{{ $blog->title }}" content="{!! $blog->content !!}"
-                        image="{{ $blog->documents->first()['url'] ?? '' }}" />
+                    <x-beritacard url="{{ route('blog.show', $blog->slug) }}"
+                        date="{{ $blog->created_at ? $blog->created_at->format('d F Y') : '' }}" title="{{ $blog->title }}"
+                        content="{!! $blog->content !!}" image="{{ $blog->documents->first()['url'] ?? '' }}" />
                 @endforeach
             </div>
             <div class="d-flex justify-content-center">
-                <x-button url="">
+                <x-button url="/berita">
                     Baca Selengkapnya <i class="fa-solid fa-share"></i>
                 </x-button>
             </div>

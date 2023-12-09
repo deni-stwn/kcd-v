@@ -12,6 +12,28 @@
             </x-HeaderTitle>
             <p class="tw-text-base tw-tect-[#434E56]">Informasi Kontak dan lokasi KCD Pendidikan Wilayah V</p>
 
+            <div class="tw-pt-20 md:tw-pt-20">
+                <div class="row g-4 g-lg-4">
+                    <div class="col-12 col-lg-4">
+                        <x-contactCard url="#" image="{{ asset('assets/link/Rectangle 39 (3).png') }}"
+                            title="Hubungi Pegawai"
+                            content="Hubungi kami untuk informasi lebih lanjut atau pertanyaan lanjutan."
+                            label="+62 812-2397-9343" />
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <x-contactCard url="#" image="{{ asset('assets/link/Rectangle 39 (2).png') }}"
+                            title="Email Resmi"
+                            content="Tim kami siap membantu Anda dengan layanan yang ramah dan responsif."
+                            label="kcdwilayah5@gmail.com" />
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <x-contactCard url="#" image="{{ asset('assets/link/image 292.png') }}" title="Lokasi Kantor"
+                            content="Kantor kami berlokasi di pusat kota yang strategis di Sukabumi."
+                            label="Lihat di Google Maps" />
+                    </div>
+                </div>
+            </div>
+
             {{-- lokasi --}}
             <div class="container tw-pb-20 md:tw-pb-40">
                 <x-HeaderTitle position='text-center'>

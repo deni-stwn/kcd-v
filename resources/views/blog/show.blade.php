@@ -6,7 +6,7 @@
     <section class="tw-mt-[112px]">
         <div class="container">
             <img src="{{ $blog->documents->first()['url'] ?? '' }}" alt=""
-                class="tw-w-full tw-h-[620px] tw-object-cover tw-rounded-3xl"><br>
+                class="tw-w-full tw-h-[420px] md:tw-h-[620px] tw-object-cover tw-rounded-3xl"><br>
             <x-HeaderTitle>
                 <div class="tw-mb-4">
                     {{ $blog->title }}

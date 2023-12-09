@@ -50,20 +50,20 @@
                     <ul class="nav nav-treeview">
                         <x-nav-link icon="fas fa-database" label="blog" link="/admin/blog"
                             :active="Request::is('admin/blog')"></x-nav-link>
-                        <li>
+                        <x-nav-link icon="fas fa-user" label="user" link="/admin/user" :active="Request::is('admin/user')"></x-nav-link>
                         <li class="nav-item dropdown">
                             <a class="dropdown-item text-blue text-bold" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
-                                        document.getElementById('logout-form').submit();">
+                                            document.getElementById('logout-form').submit();">
                                 {{ __('Keluar') }}
                             </a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                 @csrf
                             </form>
                         </li>
+
+                    </ul>
                 </li>
-            </ul>
-            </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

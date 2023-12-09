@@ -31,16 +31,16 @@
                         <h6 class="my-4 tw-font-bold tw-text-[#2D3439]">Tautan Cepat</h6>
                         <ul class="d-flex flex-column tw-gap-3">
                             <li>
-                                <a class="">Kepegawaian</a>
+                                <a href="/link-terkait" class="">Kepegawaian</a>
                             </li>
                             <li>
-                                <a class="">Keuangan</a>
+                                <a href="/link-terkait" class="">Keuangan</a>
                             </li>
                             <li>
-                                <a class="">Bidang PSMA dan SLB</a>
+                                <a href="/link-terkait" class="">Bidang PSMA dan SLB</a>
                             </li>
                             <li>
-                                <a class="">Bidang PSMK</a>
+                                <a href="/link-terkait" class="">Bidang PSMK</a>
                             </li>
                         </ul>
                     </div>
@@ -53,10 +53,10 @@
                         <h6 class="my-4 tw-font-bold tw-text-[#2D3439]">Tentang Kami</h6>
                         <ul class="d-flex flex-column tw-gap-3">
                             <li>
-                                <a class="">Pegawai KCD</a>
+                                <a href="/pegawai" class="">Pegawai KCD</a>
                             </li>
                             <li>
-                                <a class="">Berita Terkini</a>
+                                <a href="/berita" class="">Berita Terkini</a>
                             </li>
                         </ul>
                     </div>

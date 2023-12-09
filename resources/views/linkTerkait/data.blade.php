@@ -1,0 +1,88 @@
+<?php
+
+$links = [
+    [
+        'image' => asset('assets/link/siapJabar.svg'),
+        'title' => 'SIAP JABAR',
+        'description' => 'Kepegawaian',
+        'url' => 'http://example.com/1',
+        'category' => 'kepegawaian',
+    ],
+    [
+        'image' => asset('assets/link/image 7.png'),
+        'title' => 'DAPODIK',
+        'description' => 'Data GTK & Siswa',
+        'url' => 'http://example.com/2',
+        'category' => 'sekolah',
+    ],
+    [
+        'image' => asset('assets/link/Group 19.png'),
+        'title' => 'TRK JABAR',
+        'description' => 'Kinerja Pegawai',
+        'url' => 'http://example.com/2',
+        'category' => 'kepegawaian',
+    ],
+    [
+        'image' => asset('assets/link/image 8.png'),
+        'title' => 'K-MOB',
+        'description' => 'Absensi Pegawai',
+        'url' => 'http://example.com/2',
+        'category' => 'kepegawaian',
+    ],
+    [
+        'image' => asset('assets/link/image 21 (1).png'),
+        'title' => 'SIGESIT JUARA',
+        'description' => 'DSO Pegawai & Penjadwalan',
+        'url' => 'http://example.com/2',
+        'category' => 'kepegawaian',
+    ],
+    [
+        'image' => asset('assets/link/image 22.png'),
+        'title' => 'ARKAS',
+        'description' => 'Keuangan',
+        'url' => 'http://example.com/2',
+        'category' => 'keuangan',
+    ],
+    [
+        'image' => asset('assets/link/image 23.png'),
+        'title' => 'SIPD BOPD',
+        'description' => 'Pengelolaan Anggaran',
+        'url' => 'http://example.com/2',
+        'category' => 'keuangan',
+    ],
+    [
+        'image' => asset('assets/link/image 21.png'),
+        'title' => 'PERSEDIAAN ASSET',
+        'description' => 'Persediaan  Asset',
+        'url' => 'http://example.com/2',
+        'category' => 'keuangan',
+    ],
+    [
+        'image' => asset('assets/link/image 24.png'),
+        'title' => 'SIDEBAR',
+        'description' => 'Pelayanan Persuratan',
+        'url' => 'http://example.com/2',
+        'category' => 'kepegawaian',
+    ],
+    [
+        'image' => asset('assets/link/image 25.png'),
+        'title' => 'SI PINTAR',
+        'description' => 'Data PIP Siswa',
+        'url' => 'http://example.com/2',
+        'category' => 'sekolah',
+    ],
+    [
+        'image' => asset('assets/link/Creative Studio 1.png'),
+        'title' => 'SI SITI',
+        'description' => 'Sistem  Informasi Cuti',
+        'url' => 'http://example.com/2',
+        'category' => 'kepegawaian',
+    ],
+    [
+        'image' => asset('assets/link/Creative Studio 1.png'),
+        'title' => 'E-PENGHARGAAN',
+        'description' => 'Informasi Penghargaan Pegawai',
+        'url' => 'http://example.com/2',
+        'category' => 'kepegawaian',
+    ],
+];

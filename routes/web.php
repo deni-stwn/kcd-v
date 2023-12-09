@@ -3,6 +3,7 @@
 use App\Http\Controllers\AntrianController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 /*
@@ -28,11 +29,12 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('/admin/blog', BeritaController::class)->except(['show']);
     Route::post('/admin/blog/media', [BeritaController::class, 'storeMedia'])->name('blogs.storeMedia');
     Route::get('/admin/blog/{id}/media', [BeritaController::class, 'getMedia'])->name('blogs.media');
-    Route::get('/register', [App\Http\Controllers\Auth\RegisterController::class, 'showRegistrationForm'])->name('register');
-    Route::post('/register', [App\Http\Controllers\Auth\RegisterController::class, 'register']);
+    Route::resource('/admin/user', UserController::class);
+    // Route::get('/admin/register', [App\Http\Controllers\Auth\RegisterController::class, 'showRegistrationForm'])->name('register');
+    // Route::post('register', [App\Http\Controllers\Auth\RegisterController::class, 'register']);
 });
 
-Auth::routes(['register' => false]);
+Auth::routes();
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

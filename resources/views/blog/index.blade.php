@@ -16,16 +16,16 @@
                 <div class="carousel-inner">
                     @foreach ($blogs->take(3) as $index => $blog)
                         <div
-                            class="tw-h-[620px] tw-w-full tw-overflow-hidden tw-relative carousel-item {{ $loop->first ? 'active' : '' }}">
+                            class="tw-h-[420px] md:tw-h-[620px] tw-w-full tw-overflow-hidden tw-relative carousel-item {{ $loop->first ? 'active' : '' }}">
                             <div
                                 class="tw-text-white tw-z-10 tw-flex tw-justify-center tw-items-center tw-rounded-3xl tw-w-full tw-h-full tw-absolute">
                                 <div class="tw-text-center">
                                     <a href="{{ route('blog.show', $blog->slug) }}" class="hover:tw-text-white">
-                                        <h1 class="tw-text-5xl tracking-wider tw-font-bold">
+                                        <h1 class="tw-text-3xl md:tw-text-5xl tracking-wider tw-font-bold">
                                             {{ $blog->title }}
                                         </h1>
                                         <h4
-                                            class="tw-font-normal tw-text-white tw-mt-6 tw-px-60 tw-text-sm tw-line-clamp-2">
+                                            class="tw-font-normal tw-text-white tw-mt-6 md:tw-px-60 tw-px-20 tw-text-sm tw-line-clamp-2">
                                             {!! $blog->content !!}</h4>
                                     </a>
                                 </div>
