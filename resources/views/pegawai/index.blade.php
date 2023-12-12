@@ -19,10 +19,10 @@
                 <div
                     class="tw-shadow-lg tw-rounded-2xl tw-bg-white tw-h-full  tw-p-4 md:tw-p-6 tw-gap-y-4 tw-flex tw-flex-col tw-justify-center tw-items-center">
                     <div class="tw-w-24 tw-h-24 md:tw-w-40 md:tw-h-40">
-                        <img src="{{ asset('assets/teteh.jpg') }}" alt=""
+                        <img src="{{ asset('assets/mahdi-bafande-XCU9ZV_ys5w-unsplash.jpg') }}" alt=""
                             class="tw-rounded-full object-fit-cover tw-w-full tw-h-full">
                     </div>
-                    <h1 class="text-center tw-font-bold">SUHENDI, S.Pd., M.Pd</h1>
+                    <h1 class="text-center tw-font-bold">JOHN DOE, S.Pd., M.kom</h1>
                 </div>
             </div>
 
@@ -33,7 +33,7 @@
                         <img src="{{ asset('assets/teteh.jpg') }}" alt=""
                             class="tw-rounded-full object-fit-cover tw-w-full tw-h-full">
                     </div>
-                    <h1 class="text-center tw-font-bold">SUHENDI, S.Pd., M.Pd</h1>
+                    <h1 class="text-center tw-font-bold">AJENG, S.Pd., M.kom</h1>
                 </div>
                 <div
                     class="tw-shadow-lg tw-rounded-2xl tw-bg-white tw-h-full  tw-p-4 md:tw-p-6 tw-gap-y-4 tw-flex tw-flex-col tw-justify-center tw-items-center">
@@ -41,7 +41,7 @@
                         <img src="{{ asset('assets/teteh.jpg') }}" alt=""
                             class="tw-rounded-full object-fit-cover tw-w-full tw-h-full">
                     </div>
-                    <h1 class="text-center tw-font-bold">SUHENDI, S.Pd., M.Pd</h1>
+                    <h1 class="text-center tw-font-bold">AJENG, S.Pd., M.kom</h1>
                 </div>
             </div>
 

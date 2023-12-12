@@ -2,6 +2,20 @@
 
 @section('pageTitle', 'Home')
 
+@push('styles')
+    <style>
+        .carousel-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #222222;
+            opacity: 0.3;
+        }
+    </style>
+@endpush
+
 @section('content')
     <section>
         <div class="bg-auto hero-graphics tw-mt-20 tw-relative">
@@ -11,11 +25,13 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="d-block w-100 tw-h-[700px] tw-object-cover tw-object-bottom"
-                            src="{{ asset('assets/teteh.jpg') }} " alt="First slide">
+                            src="{{ asset('assets/scott-graham-OQMZwNd3ThU-unsplash.jpg') }} " alt="First slide">
+                        <div class="carousel-overlay"></div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100 tw-h-[700px] tw-object-cover tw-object-top"
                             src="{{ asset('Banner.png') }}" alt="Second slide">
+                        <div class="carousel-overlay"></div>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
