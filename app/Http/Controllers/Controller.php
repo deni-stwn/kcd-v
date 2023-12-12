@@ -130,7 +130,7 @@ class Controller extends BaseController
                 'image' => asset('assets/link/image 26.png'),
                 'title' => 'E-PENGHARGAAN',
                 'description' => 'Informasi Penghargaan Pegawai',
-                'url' => 'http://example.com/2',
+                'url' => 'https://kinerja.jabarprov.go.id/penghargaan/',
                 'category' => 'kepegawaian',
             ],
         ];
